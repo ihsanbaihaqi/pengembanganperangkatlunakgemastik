@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+
+:root {
+    --primary-color: #007aff;
+    /* Warna biru pada navigasi */
+    --background-color: #f0f0f0;
+    /* Warna latar belakang umum */
+    --card-background: #fff;
+    --text-color: #333;
+    --light-text-color: #666;
+    --white: #fff;
+    --placeholder-color: #d1c9c7;
+    /* Warna abu-abu pada placeholder video */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.app-container {
+    width: 100%;
+    max-width: 450px;
+    /* Ukuran maksimal seperti perangkat seluler */
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header Styles */
+
+.app-header {
+    background-color: var(--white);
+    padding: 10px 20px;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.back-button {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 15px;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Main Content Styles */
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 250px;
+    /* Atur tinggi sesuai kebutuhan */
+    background-color: var(--placeholder-color);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.summary-item:nth-child(1) {
+    /* Latihan */
+    text-align: left;
+    align-items: flex-start;
+}
+
+.summary-item:nth-child(3) {
+    /* Waktu */
+    text-align: right;
+    align-items: flex-end;
+}
+
+.summary-item .label {
+    font-size: 16px;
+    color: var(--light-text-color);
+}
+
+.summary-item .value {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.summary-item .sub-label {
+    font-size: 14px;
+    color: var(--light-text-color);
+    margin-top: 5px;
+}
+
+.share-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Navigation Bar Styles */
+
+.bottom-nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 80px;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item.active {
+    color: var(--primary-color);
+}
+
+.home-circle {
+    background-color: var(--white);
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-circle i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
