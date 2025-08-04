@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari 1 - Latihan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background: #fff;
+            color: #000;
+        }
+        
+        .container {
+            max-width: 375px;
+            margin: auto;
+            padding: 16px;
+        }
+        
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        
+        .summary span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .exercise {
+            display: flex;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .exercise img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .exercise-info {
+            flex: 1;
+        }
+        
+        .exercise-info h4 {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        .exercise-info p {
+            font-size: 13px;
+            color: #555;
+        }
+        
+        .exercise-stats {
+            display: flex;
+            gap: 10px;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+        
+        .exercise-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .start-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-width: 375px;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            border-top: 1px solid #ccc;
+        }
+        
+        .bottom-nav img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <span>⬅</span>
+            <div>Hari 1</div>
+        </div>
+
+        <div class="summary">
+            <div>5 Latihan</div>
+            <div>
+                <span>⏱ 00:36</span>
+                <span>🔥 12.3 Kkal</span>
+            </div>
+        </div>
+
+        <!-- Exercise Items -->
+        <div class="exercise">
+            <img src="https://via.placeholder.com/64x64.png?text=1" alt="Loncat Bintang">
+            <div class="exercise-info">
+                <p>22 Feb, 1:15 PM</p>
+                <h4>Loncat Bintang</h4>
+                <div class="exercise-stats">
+                    <span>⏱ 00:36</span>
+                    <span>🔥 12.3 Kkal</span>
+                </div>
+            </div>
+        </div>
+        <!-- Ulangi untuk 4 latihan lainnya -->
+        <!-- Anda bisa mengganti src img dan title -->
+        <div class="exercise">
+            <img src="https://via.placeholder.com/64x64.png?text=2" alt="Kaki Menengah">
+            <div class="exercise-info">
+                <p>22 Feb, 1:15 PM</p>
+                <h4>Kaki Menengah</h4>
+                <div class="exercise-stats">
+                    <span>⏱ 00:36</span>
+                    <span>🔥 12.3 Kkal</span>
+                </div>
+            </div>
+        </div>
+        <div class="exercise">
+            <img src="https://via.placeholder.com/64x64.png?text=3" alt="Kaki Menengah">
+            <div class="exercise-info">
+                <p>22 Feb, 1:15 PM</p>
+                <h4>Kaki Menengah</h4>
+                <div class="exercise-stats">
+                    <span>⏱ 00:36</span>
+                    <span>🔥 12.3 Kkal</span>
+                </div>
+            </div>
+        </div>
+        <div class="exercise">
+            <img src="https://via.placeholder.com/64x64.png?text=4" alt="Kaki Menengah">
+            <div class="exercise-info">
+                <p>22 Feb, 1:15 PM</p>
+                <h4>Kaki Menengah</h4>
+                <div class="exercise-stats">
+                    <span>⏱ 00:36</span>
+                    <span>🔥 12.3 Kkal</span>
+                </div>
+            </div>
+        </div>
+        <div class="exercise">
+            <img src="https://via.placeholder.com/64x64.png?text=5" alt="Kaki Menengah">
+            <div class="exercise-info">
+                <p>22 Feb, 1:15 PM</p>
+                <h4>Kaki Menengah</h4>
+                <div class="exercise-stats">
+                    <span>⏱ 00:36</span>
+                    <span>🔥 12.3 Kkal</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="start-btn">Mulai</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+/* General Styling */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 414px;
+    /* Typical mobile phone width */
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Header */
+
+.header {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.status-bar .icons i {
+    margin-left: 5px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.page-title .back-arrow {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.page-title h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* Content */
+
+.content {
+    flex-grow: 1;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.summary .count {
+    font-size: 16px;
+    color: #888;
+}
+
+.summary .stats {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.summary .stats i {
+    color: #888;
+}
+
+.summary .stats .calories i {
+    color: #ff4500;
+}
+
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.exercise-item {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.exercise-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.exercise-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.exercise-details .date {
+    font-size: 12px;
+    color: #888;
+}
+
+.exercise-details .name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.exercise-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #555;
+}
+
+.exercise-stats .calories i {
+    color: #ff4500;
+}
+
+
+/* Action Button */
+
+.action-button-wrapper {
+    position: fixed;
+    bottom: 90px;
+    /* Position above the navigation bar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.action-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 122, 255, 0.3);
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 414px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-item {
+    font-size: 24px;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px;
+}
+
+.navbar .nav-item.active {
+    color: #007aff;
+}
+
+.navbar .nav-item.search-icon {
+    font-size: 28px;
+    background-color: #007aff;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateY(-25px);
+    /* Position the search button higher */
+    box-shadow: 0 4px 10px rgba(0, 122, 255, 0.3);
+}
+
+.navbar .nav-item:not(.search-icon) i {
+    font-size: 24px;
+}
