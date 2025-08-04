@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot AI</title>
+</head>
+
+<body>
+    <h1>Chatbot AI</h1>
+    <textarea id="input" placeholder="Tanya sesuatu..."></textarea><br>
+    <button onclick="askAI()">Kirim</button>
+    <pre id="response"></pre>
+
+    <script>
+        async function askAI() {
+            const input = document.getElementById('input').value;
+
+            const response = await fetch('/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: input
+                })
+            });
+
+            const data = await response.json();
+            document.getElementById('response').textContent = data.reply;
+        }
+    </script>
+</body>
+
+</html>
