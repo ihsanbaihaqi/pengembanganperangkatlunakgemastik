@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Latihan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background: #fff;
+            color: #000;
+        }
+        
+        .container {
+            max-width: 375px;
+            margin: auto;
+            padding: 16px;
+        }
+        
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 18px;
+            padding-bottom: 16px;
+        }
+        
+        .image-section {
+            position: relative;
+        }
+        
+        .image-section img {
+            width: 100%;
+            border-radius: 16px;
+        }
+        
+        .info-overlay {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .info-overlay div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .share-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: #007bff;
+            color: #fff;
+            padding: 6px 12px;
+            font-size: 13px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-width: 375px;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            border-top: 1px solid #ccc;
+        }
+        
+        .bottom-nav img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <span>⬅</span>
+            <div>Loncat Bintang</div>
+        </div>
+
+        <div class="image-section">
+            <img src="rt.jpg" alt="Latihan Gambar">
+            <div class="info-overlay">
+                <div>
+                    <span>Hari</span>
+                    <span>Minggu</span>
+                </div>
+                <div>
+                    <span>Kali</span>
+                    <span>5</span>
+                </div>
+                <div>
+                    <span>Waktu</span>
+                    <span>00:12</span>
+                </div>
+            </div>
+            <a href="#" class="share-button">Bagikan</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
